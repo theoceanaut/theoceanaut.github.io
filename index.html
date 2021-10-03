@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comic Book</title>
+    <title>The Oceanaut</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body style="">
+<body>
     <div class="container d-none">
         <div>
             <button type="button" class="btn-prev">Previous page</button>
@@ -34,12 +34,10 @@
                                 <div class="page page-cover page-cover-top" data-density="hard">
                                     <div class="page-content">
                                         <h2 class="font-weight-bold">The Oceanaut<br> <span style="font-size:16px">Chapter 1</span></h2>
-                                        
                                     </div>
                                 </div>
                                 <div class="page">
                                     <div class="page-content">
-                                        
                                     </div>
                                 </div>
                                 <div class="page">
@@ -104,7 +102,6 @@
                                         <div class="page-footer">9</div>
                                     </div>
                                 </div>
-                                
                                 <!-- PAGES .... -->
                                 <div class="page page-cover page-cover-bottom" data-density="hard">
                                     <div class="page-content">
@@ -116,8 +113,34 @@
                     </div>
                 </div>
             </div>
+            <div class="col-md-4 offset-md-4">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary btn-block" style="margin-top:-25px" data-toggle="modal" data-target="#exampleModal">
+                    The OCEANAUT(Click Here To See Sketch)
+                </button>
+            </div>
         </div>
     </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" data-backdrop="static" data-keyboard="false" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">sketch</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <img src="img/oceanaut.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="modal-footer">
+
+            </div>
+        </div>
+        </div>
+    </div>
+  
     <script
         src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
@@ -131,7 +154,7 @@
                 document.getElementById("demoBookExample"),
                 {
                     width: 550, // base page width
-                    height: 700, // base page height
+                    height: 680, // base page height
 
                     size: "stretch",
                     // set threshold values:
@@ -178,30 +201,5 @@
             });
     });
     </script>
-    <!--
-    <div id="magazine">
-        <div><span class="text">Page 1</span></div>
-        <div><span class="text">Page 2</span></div>
-        <div><span class="text">Page 3</span></div>
-        <div><span class="text">Page 4</span></div>
-        <div><span class="text">Page 5</span></div>
-        <div><span class="text">Page 6</span></div>
-        <div><span class="text">Page 7</span></div>
-        <div><span class="text">Page 8</span></div>
-        <div><span class="text">Page 9</span></div>
-        <div><span class="text">Page 10</span></div>
-        <div><span class="text">Page 11</span></div>
-    </div>
-    <script
-        src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-        crossorigin="anonymous"></script>
-    <script src="js/turn.js/turn.js"></script>
-    <script>
-        $(document).ready(() => {
-            $('#magazine').turn({gradients: true, acceleration: true});
-        })
-    </script>
-    -->
 </body>
 </html>

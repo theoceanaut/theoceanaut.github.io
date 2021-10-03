@@ -87,6 +87,6 @@ body {
 .book-bg {
     background-image: url('../img/book-bg.png');
       background-size: cover; 
-      margin-top: 25px; 
+      margin-top: 20px; 
       margin-bottom:40px
 }
